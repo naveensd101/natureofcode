@@ -1,5 +1,4 @@
 class Mover {
-
     constructor() {
         this.pos = createVector(random(width), random(height));
         this.vel = createVector(random(-2, 2), random(-2, 2));
@@ -10,8 +9,8 @@ class Mover {
     }
 
     show() {
-        stroke('black');
-        fill('white');
+        stroke("black");
+        fill("white");
         circle(this.pos.x, this.pos.y, 47);
     }
 
@@ -30,7 +29,7 @@ class Mover {
     }
 }
 
-let mover
+let mover;
 
 function setup() {
     createCanvas(400, 400);
@@ -38,7 +37,7 @@ function setup() {
 }
 
 function draw() {
-    console.log(mover)
+    console.log(mover);
     background(220);
     mover.update();
     mover.checkEdges();
